@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Form (ACT2)</title>
+</head>
+
+<style>
+
+    body{
+    
+        text-align: center;
+    }
+    
+    h1{
+    
+        color: brown
+    }
+    
+    </style>
+
+<body>
+    <div class="blog">
+        <header>
+
+        <img src="MicrosoftTeams-image (11).png" width="230px" height="200px">
+
+        </header>
+
+        <h1>Book a Trip</h1>
+    
+            <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#">Location</a>
+
+            <a href="#">Blog</a>
+
+            </nav><br>
+
+            <label for="date">Book a Date</label>
+
+            <input type="date" value="2022-10-20" min='2022-10-20' max='2022-12-31'><br><br>
+
+            <label for="Number of People">Number of People</label>
+
+            <input type="range" min="2" max="10" value="2" oninput="this.nextElementSibling.value = this.value"><output>2</output>
+
+            <br><br><label for="location">Location</label>
+            
+            <input list="place"><br><br>  
+            
+            <datalist id="place">
+
+                <option value="Uptown">
+
+                <option value="Downtown">
+
+            </datalist>
+
+            <video width="320" height="240" controls muted>
+
+                <source src="videos/video.mp4" type="video/ogg">
+               
+             </video>
+             <br>
+
+             <label for="rating">Rating</label>
+
+             <input type="range" id="rating" name="rating" list="tickmarks" step="25"/>
+         
+             <datalist id="tickmarks">
+         
+               <option value="0"></option>
+         
+               <option value="25"></option>
+         
+               <option value="50"></option>
+         
+               <option value="75"></option>
+         
+               <option value="100"></option>
+
+             </datalist><br><br>
+
+             <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+
+             <label for="checkbox_id">I agree to the cancellation policy</label><br><br>
+
+            <input type="submit" value="Book Table"><br><br>
+           
+
+            <footer>© Copy Right 2022, John Merwin Cortez made with ♥</footer>
+
+    
+</body>
+</html>
